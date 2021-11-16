@@ -4,7 +4,7 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://creodata.sharepoint.com/sites/DeveloperSite/SitePages/App-Customization.aspx",
       "customActions": {
         "d2330153-480e-45f0-8891-7b9fb50c084d": {
           "location": "ClientSideExtension.ApplicationCustomizer",
@@ -15,7 +15,7 @@
       }
     },
     "helloAppCustomizer": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://creodata.sharepoint.com/sites/DeveloperSite/SitePages/App-Customization.aspx",
       "customActions": {
         "d2330153-480e-45f0-8891-7b9fb50c084d": {
           "location": "ClientSideExtension.ApplicationCustomizer",

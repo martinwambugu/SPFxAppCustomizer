@@ -1,13 +1,11 @@
-import { override } from '@microsoft/decorators';
-import { Log } from '@microsoft/sp-core-library';
-import {
-  BaseApplicationCustomizer
-} from '@microsoft/sp-application-base';
-import { Dialog } from '@microsoft/sp-dialog';
+import { override } from "@microsoft/decorators";
+import { Log } from "@microsoft/sp-core-library";
+import { BaseApplicationCustomizer } from "@microsoft/sp-application-base";
+import { Dialog } from "@microsoft/sp-dialog";
 
-import * as strings from 'HelloAppCustomizerApplicationCustomizerStrings';
+import * as strings from "HelloAppCustomizerApplicationCustomizerStrings";
 
-const LOG_SOURCE: string = 'HelloAppCustomizerApplicationCustomizer';
+const LOG_SOURCE: string = "HelloAppCustomizerApplicationCustomizer";
 
 /**
  * If your command set uses the ClientSideComponentProperties JSON input,
@@ -20,16 +18,14 @@ export interface IHelloAppCustomizerApplicationCustomizerProperties {
 }
 
 /** A Custom Action which can be run during execution of a Client Side Application */
-export default class HelloAppCustomizerApplicationCustomizer
-  extends BaseApplicationCustomizer<IHelloAppCustomizerApplicationCustomizerProperties> {
-
+export default class HelloAppCustomizerApplicationCustomizer extends BaseApplicationCustomizer<IHelloAppCustomizerApplicationCustomizerProperties> {
   @override
   public onInit(): Promise<void> {
     Log.info(LOG_SOURCE, `Initialized ${strings.Title}`);
 
     let message: string = this.properties.testMessage;
     if (!message) {
-      message = '(No properties were provided.)';
+      message = "(No properties were provided.)";
     }
 
     Dialog.alert(`Hello from ${strings.Title}:\n\n${message}`);
