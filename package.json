@@ -12,7 +12,8 @@
     "@microsoft/decorators": "1.12.1",
     "@microsoft/sp-application-base": "1.12.1",
     "@microsoft/sp-core-library": "1.12.1",
-    "@microsoft/sp-dialog": "1.12.1"
+    "@microsoft/sp-dialog": "1.12.1",
+    "@microsoft/sp-office-ui-fabric-core": "^1.13.0"
   },
   "devDependencies": {
     "@microsoft/rush-stack-compiler-3.7": "0.2.3",
